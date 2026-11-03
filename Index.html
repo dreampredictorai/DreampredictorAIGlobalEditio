@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100d25">
+<title>DreampredictorAI Global Edition</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ color:white;
+ text-align:center;
+ background:radial-gradient(circle at top,#49316e,#17132e 55%,#090817);
+ min-height:100vh;
+}
+header{padding:28px 15px}
+h1{font-size:34px;margin:8px;color:#e6caff}
+.edition{letter-spacing:5px;color:#c8a9ff}
+main{max-width:650px;margin:auto;padding:15px}
+.aurora{
+ width:180px;height:180px;border-radius:50%;
+ margin:25px auto;
+ background:radial-gradient(circle,#fff4ff 2%,#d9aaff 15%,#7950bd 48%,#21153d 75%);
+ box-shadow:0 0 65px #b77cff;
+ display:flex;align-items:center;justify-content:center;
+ font-size:76px;
+}
+h2{font-size:28px;color:#e4caff}
+p{line-height:1.7;color:#ded5ed}
+.panel{
+ background:#ffffff12;border:1px solid #bda1e966;
+ border-radius:20px;padding:24px;margin:25px 0;
+}
+textarea{
+ width:100%;min-height:120px;padding:15px;
+ border-radius:12px;border:1px solid #bda1e9;
+ background:#17132e;color:white;font-size:16px;
+}
+button{
+ background:linear-gradient(90deg,#9b65df,#d18cdb);
+ color:white;border:0;border-radius:30px;
+ padding:15px 25px;font-size:16px;
+ font-weight:bold;margin-top:18px;
+}
+#result{margin-top:20px;color:#f0d8ff;line-height:1.7}
+footer{padding:25px;color:#b9aaca;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+<h1>DreampredictorAI</h1>
+<div class="edition">GLOBAL EDITION</div>
+</header>
+<main>
+<div class="aurora">✧</div>
+<h2>Hola, soy Aurora</h2>
+<p>Bienvenido a un universo donde tus sueños
+se convierten en un viaje de descubrimiento.</p>
+
+<div class="panel">
+<h2>¿Qué soñaste anoche?</h2>
+<p>Cuéntame tu sueño y comenzaremos a explorar
+sus símbolos y significados.</p>
+<textarea id="dream" placeholder="Escribe aquí tu sueño..."></textarea>
+<br>
+<button onclick="interpretDream()">Explorar mi sueño ✨</button>
+<div id="result"></div>
+</div>
+</main>
+<footer>
+DreampredictorAI Global Edition © 2026<br>
+Una experiencia de exploración personal.
+Las interpretaciones son orientativas, no predicciones.
+</footer>
+<script>
+function interpretDream(){
+ const dream=document.getElementById("dream").value.trim();
+ const result=document.getElementById("result");
+ if(!dream){
+ result.textContent="Primero cuéntame qué soñaste.";
+ return;
+ }
+ result.textContent="✨ Gracias por compartir tu sueño. Soy Aurora y este es el comienzo de nuestro viaje. La interpretación inteligente de sueños estará disponible en una próxima versión.";
+}
+</script>
+</body>
+</html>
